@@ -1,6 +1,8 @@
 Based on: https://github.com/bmcbride/geojson-share-maps
 
-Embedded link: ```<script src="https://embed.github.com/view/geojson/mds08011/KimberlyTravels/master/KS_Map.geojson"></script>```
+### Direct Map Links
+- Embedded link: ```<script src="https://embed.github.com/view/geojson/mds08011/KimberlyTravels/master/KS_Map.geojson"></script>```
+- Raw geojson: https://raw.githubusercontent.com/mds08011/KimberlyTravels/master/KS_Map.geojson
 
 ### Features:
 
