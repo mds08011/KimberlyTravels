@@ -1,0 +1,1 @@
+{"groups":{"#33a02c":{"div":"#box2","label":"Visited","paths":["CA","HI","AZ","MI","DC","FL","OR","WA","ID","MT","NV","NM","CO","UT","TX","WI","SD","ND","WY","MN","GA","SC","CT","OH","IL","TN","NY","NE","KS","MS","MO","LA","AR","KY","WV","PA","IN","VA","MD"]}},"title":"Legend","hidden":[],"borders":"#000000"}
