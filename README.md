@@ -20,8 +20,9 @@ Based on: https://github.com/bmcbride/geojson-share-maps
 | _attribution_ | Any string              | NA            | Source attribution added to text in bottom right of map  | False    |
 | _cluster_     | true / false            | True          | Should markers be clustered?                             | False    |
 
-### Other Tools
+### Other Resources
 
 - Validate geojson files: http://geojsonlint.com/
 - Visualize and edit geojson: https://geojson.net/
 - Alternative geojson editor: https://geoman.io/geojson-editor
+- Using geojson on Github: https://help.github.com/en/github/managing-files-in-a-repository/mapping-geojson-files-on-github
