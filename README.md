@@ -24,3 +24,4 @@ Based on: https://github.com/bmcbride/geojson-share-maps
 
 - Validate geojson files: http://geojsonlint.com/
 - Visualize and edit geojson: https://geojson.net/
+- Alternative geojson editor: https://geoman.io/geojson-editor
