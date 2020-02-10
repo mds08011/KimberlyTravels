@@ -19,3 +19,7 @@ Based on: https://github.com/bmcbride/geojson-share-maps
 | _fields_      | Any valid properties    | All           | Comma separated list of specific properties to show      | False    |
 | _attribution_ | Any string              | NA            | Source attribution added to text in bottom right of map  | False    |
 | _cluster_     | true / false            | True          | Should markers be clustered?                             | False    |
+
+### Other Tools
+
+- Validate geojson files: http://geojsonlint.com/
