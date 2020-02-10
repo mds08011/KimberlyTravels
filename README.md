@@ -1,5 +1,7 @@
 Based on: https://github.com/bmcbride/geojson-share-maps
 
+Embedded link: <script src="https://embed.github.com/view/geojson/mds08011/KimberlyTravels/master/KS_Map.geojson"></script>
+
 ### Features:
 
 - Fullscreen mobile-friendly map template with responsive navbar and modal popups
