@@ -4,7 +4,8 @@ Based on: https://github.com/bmcbride/geojson-share-maps
 - Web Map: https://mds08011.github.io/KimberlyTravel/?src=https://raw.githubusercontent.com/mds08011/KimberlyTravels/master/KS_Map.geojson
 - Embedded link: ```<script src="https://embed.github.com/view/geojson/mds08011/KimberlyTravel/master/KS_Map.geojson"></script>```
 - Raw geojson: https://raw.githubusercontent.com/mds08011/KimberlyTravel/master/KS_Map.geojson
-- States: https://mds08011.github.io/KimberlyTravel/?src=https://raw.githubusercontent.com/mds08011/KimberlyTravels/master/KS_Map.geojson
+- States: https://mds08011.github.io/KimberlyTravel/?src=https://raw.githubusercontent.com/mds08011/KimberlyTravels/master/source-data/geojson/ne_10m_admin_1_states_provinces/KS_States.geojson
+
 
 ### Features:
 
