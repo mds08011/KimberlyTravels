@@ -35,3 +35,4 @@ Based on: https://github.com/bmcbride/geojson-share-maps
 - Visualize and edit geojson (Option 3): https://geoman.io/geojson-editor
 - Using geojson on Github: https://help.github.com/en/github/managing-files-in-a-repository/mapping-geojson-files-on-github
 - Download source SHP: http://www.naturalearthdata.com/
+- Right Hand Rule Fixer: https://mapster.me/right-hand-rule-geojson-fixer/
