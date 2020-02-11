@@ -27,7 +27,7 @@ Based on: https://github.com/bmcbride/geojson-share-maps
 ### Other Resources
 
 - Validate geojson files: http://geojsonlint.com/
-- Visualize and edit geojson (Option 1): https://geojson.net/
+- Visualize and edit geojson (Option 1): https://geojson.io
 - Visualize and edit geojson (Option 2): https://geojson.net/
 - Visualize and edit geojson (Option 3): https://geoman.io/geojson-editor
 - Using geojson on Github: https://help.github.com/en/github/managing-files-in-a-repository/mapping-geojson-files-on-github
