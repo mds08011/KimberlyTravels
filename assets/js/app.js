@@ -144,12 +144,12 @@ function fetchData() {
   featureLayer.clearLayers();
   $("#feature-list tbody").empty();
   if (urlParams.src.indexOf(".topojson") > -1) {
-    omnivore.topojson(decodeURIComponent(https://raw.githubusercontent.com/mds08011/KimberlyTravels/master/KS_Map.geojson.src), null, featureLayer).on("ready", function(layer) {
+    omnivore.topojson(https://raw.githubusercontent.com/mds08011/KimberlyTravels/master/KS_Map.geojson.src), null, featureLayer).on("ready", function(layer) {
       $("#loading").hide();
     });
   }
   else {
-    featureLayer.loadURL(decodeURIComponent(https://raw.githubusercontent.com/mds08011/KimberlyTravels/master/KS_Map.geojson)).on("ready", function(layer) {
+    featureLayer.loadURL(https://raw.githubusercontent.com/mds08011/KimberlyTravels/master/KS_Map.geojson)).on("ready", function(layer) {
       $("#loading").hide();
     });
   }
