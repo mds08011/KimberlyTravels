@@ -144,12 +144,12 @@ function fetchData() {
   featureLayer.clearLayers();
   $("#feature-list tbody").empty();
   if (urlParams.src.indexOf(".topojson") > -1) {
-    omnivore.topojson(decodeURIComponent(urlParams.src), null, featureLayer).on("ready", function(layer) {
+    omnivore.topojson(decodeURIComponent(https://raw.githubusercontent.com/mds08011/KimberlyTravels/master/KS_Map.geojson.src), null, featureLayer).on("ready", function(layer) {
       $("#loading").hide();
     });
   }
   else {
-    featureLayer.loadURL(decodeURIComponent(urlParams.src)).on("ready", function(layer) {
+    featureLayer.loadURL(decodeURIComponent(https://raw.githubusercontent.com/mds08011/KimberlyTravels/master/KS_Map.geojson)).on("ready", function(layer) {
       $("#loading").hide();
     });
   }
@@ -277,7 +277,7 @@ $("#sidebar-hide-btn").click(function() {
 
 $(document).ready(function() {
   fetchData();
-  $("#download").attr("href", urlParams.src);
+  $("#download").attr("href", https://raw.githubusercontent.com/mds08011/KimberlyTravels/master/KS_Map.geojson);
 });
 
 $(document).on("click", ".feature-row", function(e) {
