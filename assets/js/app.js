@@ -208,7 +208,7 @@ if (location.search) {
   }
 }
 else{
-  var parameters = "src=https://raw.githubusercontent.com/mds08011/KimberlyTravels/master/KS_Map.geojson&logo=https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/320px-Flag_of_the_United_States.svg.png&title_field=NAME&fields=NAME&title=Kimberly%27s%20Travel%20Map&attribution=https://github.com/mds08011/KimberlyTravel&cluster=True";
+  var parameters = "src=https://raw.githubusercontent.com/mds08011/KimberlyTravels/master/KS_Map.geojson&logo=https://commons.wikimedia.org/wiki/File:Cat_silhouette.svg&title_field=NAME&fields=NAME&title=Kimberly%27s%20Travel%20Map&attribution=https://github.com/mds08011/KimberlyTravel&cluster=True";
   var parts = parameters.split("&");
   for (var i = 0; i < parts.length; i++) {
     var nv = parts[i].split("=");
