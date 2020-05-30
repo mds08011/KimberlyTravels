@@ -59,7 +59,6 @@ featureLayer.on("ready", function(e) {
     });
   });
 
-
   if (urlParams.title && urlParams.title.length > 0) {
     var title = decodeURI(urlParams.title);
     $("[name='title']").html(title);
@@ -86,7 +85,6 @@ featureLayer.once("ready", function(e) {
     $("#navbar-title").prepend("<img src='" + urlParams.logo + "'>");
   }
   /* If id param passed in URL, zoom to feature, else fit to cluster bounds or fitWorld if no data */
-
   if (urlParams.id && urlParams.id.length > 0) {
     var id = parseInt(urlParams.id);
     zoomToFeature(id);
@@ -198,18 +196,8 @@ function zoomToFeature(id) {
   }
 }
 
-
 if (location.search) {
   var parts = location.search.substring(1).split("&");
-  for (var i = 0; i < parts.length; i++) {
-    var nv = parts[i].split("=");
-    if (!nv[0]) continue;
-    urlParams[nv[0]] = nv[1] || true;
-  }
-}
-else{
-  var parameters = "src=https://raw.githubusercontent.com/mds08011/KimberlyTravels/master/KS_Map.geojson&logo=https://upload.wikimedia.org/wikipedia/commons/0/07/Cat_silhouette_darkgray.svg&title_field=NAME&fields=NAME&title=Kimberly%27s%20Travel%20Map&attribution=https://github.com/mds08011/KimberlyTravel&cluster=True";
-  var parts = parameters.split("&");
   for (var i = 0; i < parts.length; i++) {
     var nv = parts[i].split("=");
     if (!nv[0]) continue;
