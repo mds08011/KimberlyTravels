@@ -208,7 +208,7 @@ if (location.search) {
   }
 }
 else{
-  var parameters = "src=https://raw.githubusercontent.com/mds08011/KimberlyTravel/master/KS_Map.geojson&logo=https://github.com/mds08011/KimberlyTravel/&cluster=True";
+  var parameters = "src=https://raw.githubusercontent.com/mds08011/KimberlyTravel/blob/master/map/KS_Map.geojson&logo=https://github.com/mds08011/KimberlyTravel/&cluster=True";
   var parts = parameters.split("&");
   for (var i = 0; i < parts.length; i++) {
     var nv = parts[i].split("=");
