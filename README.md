@@ -38,5 +38,5 @@ Based on: https://github.com/bmcbride/geojson-share-maps
 - Right Hand Rule Fixer: https://mapster.me/right-hand-rule-geojson-fixer/
 
 ### Blog 
-Blog is a continuation of: https://hotamali.wordpress.com/
-Sakura CSS
+- The Blog is a continuation of: https://hotamali.wordpress.com/
+- Sakura CSS: https://github.com/oxalorg/sakura
