@@ -64,13 +64,49 @@
     <!-- <link rel="last" href="https://example.com/article/?page=42"> -->
     <!-- <link rel="prev" href="https://example.com/article/?page=1"> -->
     <!-- <link rel="next" href="https://example.com/article/?page=3"> -->
+    <style>
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        border: 1px solid #e7e7e7;
+        background-color: #f3f3f3;
+      }
+      
+      li {
+        float: left;
+      }
+      
+      li a {
+        display: block;
+        color: #666;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      
+      li a:hover:not(.active) {
+        background-color: #ddd;
+      }
+      
+      li a.active {
+        color: white;
+        background-color: #04AA6D;
+      }
+      </style>
   </head>
 <body>
     <h5>This website is a work in progress.<h5>
     <p>Please see my progress as I travel the world!</p>
+    <nav>
+    <ul>
+      <li><a class="active" href="#home">Home</a></li>
+      <li><a href="/blog/">Blog</a></li>
+      <li style="float:right"><a href="#about">About</a></li>
+    </ul>
+  </nav>
     <!-- <button><a href="/map/"><b style="color:white;">Travel Map</b></a></button> -->
-    <button><a href="/blog/"><b style="color:white;">Blog</b></a></button>
-<pre>
 <table style="width: 100%; text-align: left;" border="0"
  cellpadding="10" cellspacing="30">
   <tbody>
@@ -129,6 +165,5 @@
                   |&nbsp; |&nbsp; |&nbsp; |&nbsp; |&nbsp; |&nbsp; |</b></tt></td>
                       </tr>
                     </table>
-      </pre>
 </body>
 </html>
