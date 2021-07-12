@@ -106,13 +106,29 @@
           <li style="float:right"><a href="about.html">About</a></li>
         </ul>
     </nav>
+      <div class="center" id="map">
+        <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+        <link href="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css" rel="stylesheet">
+        <script src="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js"></script>
+        <style>
+          body { margin: 0; padding: 0; }
+          #map { position: absolute; top: 0; bottom: 0; width: 100%; }
+          .center {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 300px;}
+          </style>
+      <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoibWRzMDgwMTEiLCJhIjoiY2tldmx1NnR0MW9zYTMxb213ZXlscXVmbCJ9.UnbHB5t6NfHhZjBom3u_Pw';
+      var map = new mapboxgl.Map({
+      container: 'map', // container id
+      style: 'mapbox://styles/mds08011/ckq9u9va7042s17r49bnzv0vt', // style URL
+      center: [-117.29, 32.95], // starting position [lng, lat]
+      zoom: 2 // starting zoom
+      });
+      </script>
+      </div>
     <p>Please see my progress as I travel the world!</p>
-    <div style="text-align: center;"></div>
-    <iframe id="Global Travel Map"
-    title="Global Travel Map"
-    width="100%"
-    src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik">
-    </iframe>
-    </div>
 </body>
 </html>
