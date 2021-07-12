@@ -1,7 +1,6 @@
 <!DOCTYPE html><!-- Has to be present for compatibility reasons. -->
 <head>
 <meta charset="UTF-8"><!-- This attribute declares the document’s character encoding. Leaving it off might cause specific characters to display incorrectly in some browsers. It must come before the <title> element to avoid faulty characters in the page title.-->
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <html lang="en" class="no-js"><!-- The lang attribute applied to the html element, defines the natural language of the page. It contains a single “language tag” in the format defined in Tags for Identifying Languages (BCP47), for example en for English, de for German or ru for Russian.  Apply styling to specific components in browsers that don’t support JavaScript. This class will be removed in browsers that support and execute modern JavaScript. -->
 
 <!-- <link rel="stylesheet" href="https://unpkg.com/sakura.css/css/sakura.css"> -->
@@ -65,7 +64,14 @@
     <!-- <link rel="last" href="https://example.com/article/?page=42"> -->
     <!-- <link rel="prev" href="https://example.com/article/?page=1"> -->
     <!-- <link rel="next" href="https://example.com/article/?page=3"> -->
-  </head>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js"></script>
+    <style>
+    body { margin: 0; padding: 0; }
+    #map { position: absolute; top: 0; bottom: 0; width: 100%; }
+    </style>
+    </head>
 <body>
     <nav>
       <style>
@@ -106,6 +112,16 @@
           <li style="float:right"><a href="about.html">About</a></li>
         </ul>
     </nav>
+      <div id="map"></div>
+      <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoibWRzMDgwMTEiLCJhIjoiY2tldmx1NnR0MW9zYTMxb213ZXlscXVmbCJ9.UnbHB5t6NfHhZjBom3u_Pw';
+      var map = new mapboxgl.Map({
+      container: 'map', // container id
+      style: 'mapbox://styles/mapbox/streets-v11', // style URL
+      center: [-74.5, 40], // starting position [lng, lat]
+      zoom: 9 // starting zoom
+      });
+      </script>
     <p>Please see my progress as I travel the world!</p>
 </body>
 </html>
