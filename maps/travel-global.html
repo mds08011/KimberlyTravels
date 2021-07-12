@@ -66,58 +66,13 @@
     <!-- <link rel="prev" href="https://example.com/article/?page=1"> -->
     <!-- <link rel="next" href="https://example.com/article/?page=3"> -->
     </head>
-<body>
-    <nav>
-      <style>
-        ul {
-          list-style-type: none;
-          margin: 0;
-          padding: 0;
-          overflow: hidden;
-          border: 1px solid #e7e7e7;
-          background-color: #f3f3f3;
-        }
-        
-        li {
-          float: left;
-        }
-        
-        li a {
-          display: block;
-          color: #666;
-          text-align: center;
-          padding: 14px 16px;
-          text-decoration: none;
-        }
-        
-        li a:hover:not(.active) {
-          background-color: #ddd;
-        }
-        
-        li a.active {
-          color: white;
-          background-color: #570a9e;
-        }
-        </style>
-        <ul>
-          <li><a href="/index.html">Home</a></li>
-          <li><a class="active" href="map.html">Travel Map</a></li>
-          <li><a href="/blog/index.html">Blog</a></li>
-          <li style="float:right"><a href="about.html">About</a></li>
-        </ul>
-    </nav>
-      <div class="center" id="map">
+    <div id="map"></div>
         <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
         <link href="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css" rel="stylesheet">
         <script src="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js"></script>
         <style>
           body { margin: 0; padding: 0; }
           #map { position: absolute; top: 0; bottom: 0; width: 100%; }
-          .center {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          height: 300px;}
           </style>
       <script>
         mapboxgl.accessToken = 'pk.eyJ1IjoibWRzMDgwMTEiLCJhIjoiY2tldmx1NnR0MW9zYTMxb213ZXlscXVmbCJ9.UnbHB5t6NfHhZjBom3u_Pw';
@@ -128,7 +83,5 @@
       zoom: 2 // starting zoom
       });
       </script>
-      </div>
-    <p>Please see my progress as I travel the world!</p>
 </body>
 </html>
