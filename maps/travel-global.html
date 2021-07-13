@@ -83,6 +83,10 @@
       map.addControl(new mapboxgl.FullscreenControl());
       map.addControl(new mapboxgl.NavigationControl()); // Add zoom and rotation controls to the map.
 
+// Create a default Marker, colored black
+var marker2 = new mapboxgl.Marker({ color: 'black'})
+.setLngLat([12.65147, 55.608166])
+.addTo(map);
       </script>
 </body>
 </html>
