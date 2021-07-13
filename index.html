@@ -68,8 +68,9 @@
   </head>
 <body>
   <nav>
+    <div>
     <style>
-      ul {
+      .ul1 {
         list-style-type: none;
         margin: 0;
         padding: 0;
@@ -78,11 +79,11 @@
         background-color: #f3f3f3;
       }
       
-      li {
+      .li1 {
         float: left;
       }
       
-      li a {
+      .li1 a {
         display: block;
         color: #666;
         text-align: center;
@@ -90,21 +91,20 @@
         text-decoration: none;
       }
       
-      li a:hover:not(.active) {
+      .li1 a:hover:not(.active) {
         background-color: #ddd;
       }
       
-      li a.active {
+      .li1 a.active {
         color: white;
         background-color: #570a9e;
       }
       </style>
-    <ul>
-      <li><a class="active" href="/index.html">Home</a></li>
-      <li><a href="/map.html">Travel Map</a></li>
-      <li><a href="/blog/index.html">Blog</a></li>
-      <li style="float:right"><a href="/about.html">About</a></li>
-    </ul>
+      <ul class="ul1">
+        <li class="li1"><a href="/index.html">Home</a></li>
+        <li class="li1"><a class="active" href="/blog/index.html">Blog</a></li>
+        <li class="li1" style="float:right"><a href="/about.html">About</a></li>
+      </ul>
   </nav>
   <h5>This website is a work in progress.</h5>
   <p>Please see my progress as I travel the world!</p>
