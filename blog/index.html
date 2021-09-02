@@ -35,10 +35,13 @@
     <!-- <meta name="author" content="Malcolm Smith">  --><!-- <> -->
 
 
-    <!-- <link rel="icon" href="/favicon.ico"> --><!-- <> -->
-    <!-- <link rel="icon" href="/favicon.svg" type="image/svg+xml"> --><!-- <> -->
-    <!-- <link rel="apple-touch-icon" href="/apple-touch-icon.png"> --><!-- <The 180×180px icon Apple devices will use if you add the page to your home screen.> -->
-    <!-- <link rel="manifest" href="/my.webmanifest"> --><!-- <For Android devices we need a .webmanifest file, which provides browsers with the information where the icons needed for the home screen and the splash screen for PWAs are located.> -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="manifest" href="../site.webmanifest">
+    <link rel="mask-icon" href="../safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 
     <!-- Control the behavior of search engine crawling and indexing -->
     <meta name="robots" content="index,follow"><!-- All Search Engines, else "noindex, nofollow"-->
@@ -51,13 +54,6 @@
     <meta name="geo.region" content="US-CA"><!-- Country code (ISO 3166-1): mandatory, state code (ISO 3166-2): optional; eg. content="US" / content="US-NY" -->
     <meta name="geo.placename" content="San Diego, CA"><!-- eg. content="New York City" -->
 
-    <!-- <link rel="license" href="LICENSE.html">Refers to a copyright statement that applies to the link's context -->
-
-    <!-- Provides a self reference - useful when the document has multiple possible references -->
-    <!-- <link rel="self" type="application/atom+xml" href="https://example.com/atom.xml"> -->
-
-    <!-- The first, last, previous, and next documents in a series of documents, respectively -->
-    <!-- <link rel="first" href="https://example.com/article/"> -->
     <body>
       <nav>
         <div>
@@ -99,12 +95,9 @@
         <li class="li1" style="float:right"><a href="/about.html">About</a></li>
       </ul>
       </nav>
-          <!-- <link rel="last" href="https://example.com/article/?page=42"> -->
-    <!-- <link rel="prev" href="https://example.com/article/?page=1"> -->
-    <!-- <link rel="next" href="https://example.com/article/?page=3"> -->
-    <ul>
-        <li><strong>2021</strong></li>
-        <li><strong>2015 - Peace Corps Mali</strong></li>
+    <h1>Blog</h1>
+      <h4><strong>2021</strong></h4>
+      <h4><strong>2015 - Peace Corps Mali</strong></h4>
           <ul>
             <li><p><a href="/blog/2015-11-07/PSA.html">2015-11-07 PSA</a></p></li>
             <li><p><a href="/blog/2015-10-24/repeat.html">2015-10-24 Malians Love To Repeat Things. Over And Over Again.</a></p></li>
@@ -119,6 +112,5 @@
             <li><p><a href="/blog/2015-06-05/carepackage.html">Care Package Suggestions.</a></p></li>
             <li><p><a href="/blog/2015-06-05/about.html">About.</a></p></li>
           </ul>
-    </ul>
     </body>
     </html>
