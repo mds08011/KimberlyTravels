@@ -29,6 +29,7 @@ Based on: https://github.com/bmcbride/geojson-share-maps
 
 ### Other Resources
 
+- Format and convert: https://app.placemark.io/converter
 - Validate geojson files: http://geojsonlint.com/
 - Visualize and edit geojson (Option 1): https://geojson.io
 - Visualize and edit geojson (Option 2): https://geojson.net/

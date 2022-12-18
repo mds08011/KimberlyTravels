@@ -11,15 +11,15 @@ var map = L.map('map', {
 
 // Edit links to your GitHub repo and data source credit
 map.attributionControl
-.setPrefix('View <a href="http://github.com/jackdougherty/leaflet-map-polygon-tabs">data and code on GitHub</a>, created with <a href="http://leafletjs.com" title="A JS library for interactive maps">Leaflet</a>; design by <a href="http://ctmirror.org">CT Mirror</a>');
+.setPrefix('View <a href="https://github.com/mds08011/kimberlytravel">data and code on GitHub</a>, created with <a href="http://leafletjs.com" title="A JS library for interactive maps">Leaflet</a>');
 
 // Basemap layer
 new L.tileLayer('http://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png', {
-  attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="http://cartodb.com/attributions">CartoDB</a>'
+  attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors</a>'
 }).addTo(map);
 
 // Edit to upload GeoJSON data file from your local directory
-$.getJSON("town-home-value-index.geojson", function (data) {
+$.getJSON("kgs-world.geojson", function (data) {
   geoJsonLayer = L.geoJson(data, {
     style: style,
     onEachFeature: onEachFeature
@@ -85,25 +85,25 @@ info.onAdd = function (map) {
 };
 
 // Edit info box labels (such as props.town) to match properties of the GeoJSON data
-info.update = function (props) {
+/*info.update = function (props) {
   var winName =
   this._div.innerHTML = (props ?
     '<div class="areaName">' + props.town + '</div>' : '<div class="areaName faded"><small>Hover over areas<br>Click tabs or arrow keys</small></div>') + '<div class="areaLabel"><div class="areaValue">Home Value Index</div>' +(props ? '' + (checkNull(props["index" + year])) : '--') + '</div>';
 };
-info.addTo(map);
+info.addTo(map);*/
 
 // When a new tab is selected, this changes the year displayed
-$(".tabItem").click(function() {
+/*$(".tabItem").click(function() {
   $(".tabItem").removeClass("selected");
   $(this).addClass("selected");
-  year = $(this).html();
+  year = $(this).html();*/
   // year = $(this).html().split("-")[1];  /* use for school years, eg 2010-11 */
-  geoJsonLayer.setStyle(style);
-});
+/*  geoJsonLayer.setStyle(style);
+});*/
 
 // Edit grades in legend to match the range cutoffs inserted above
 // In this example, the last grade will appear as "2+"
-var legend = L.control({position: 'bottomright'});
+/*var legend = L.control({position: 'bottomright'});
 legend.onAdd = function (map) {
   var div = L.DomUtil.create('div', 'info legend'),
     grades = [0.1, 0.5, 1.0, 1.5, 2],
@@ -120,7 +120,7 @@ legend.onAdd = function (map) {
   div.innerHTML = labels.join('<br>');
   return div;
 };
-legend.addTo(map);
+legend.addTo(map);*/
 
 // In info.update, this checks if GeoJSON data contains a null value, and if so displays "--"
 function checkNull(val) {
